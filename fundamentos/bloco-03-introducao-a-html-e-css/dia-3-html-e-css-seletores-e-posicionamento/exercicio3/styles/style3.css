@@ -1,0 +1,20 @@
+h1, p {
+    text-align: center;
+}
+
+li {
+    background-color: white;
+    transition: 0.7s;
+}
+
+li:hover {
+    background-color: aquamarine;
+}
+
+li:active {
+    color:white;
+}
+
+.list {
+    list-style: none;
+}
