@@ -1,0 +1,31 @@
+div :hover {
+    border: solid black;
+}
+
+h3 {
+    font-family: monospace;
+}
+
+.pri {
+    background-color: teal;
+    font-style: italic;
+}
+
+.sec {
+    background-color: #595358;
+}
+
+.comp {
+    background-color: #cadf9e;
+    padding: 5px;
+    font-style: italic;
+}
+
+.esc {
+    background-color: #c4d7f2;
+}
+
+.cla {
+    background-color: #3772ff;
+    font-style: italic;
+}
