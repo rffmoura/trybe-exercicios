@@ -8,7 +8,7 @@ h3 {
 
 .pri {
     background-color: teal;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .sec {
@@ -18,7 +18,7 @@ h3 {
 .comp {
     background-color: #cadf9e;
     padding: 5px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .esc {
@@ -27,5 +27,9 @@ h3 {
 
 .cla {
     background-color: #3772ff;
+    /* font-style: italic; */
+}
+
+div:nth-of-type(odd) {
     font-style: italic;
 }
