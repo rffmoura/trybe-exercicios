@@ -1,0 +1,28 @@
+body {
+    font-family: helvetica;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.links {
+    background-color: rgba(128, 128, 128, 0.521);
+}
+
+.section-1 p {
+    display: block;
+}
+
+
+img {
+    float: left;
+}
+
+footer {
+    margin: auto;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
