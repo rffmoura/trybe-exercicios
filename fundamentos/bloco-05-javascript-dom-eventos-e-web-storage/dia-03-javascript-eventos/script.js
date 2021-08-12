@@ -15,7 +15,7 @@ createDaysOfTheWeek();
 
 let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-function daysMonth () {
+function daysMonth() {
   let days = document.querySelector('#days')
 
   for (let i = 0; i < dezDaysList.length; i += 1) {
@@ -60,10 +60,10 @@ function clickFeriados() {
   let holidayClass = document.querySelectorAll('.holiday')
   let backgroundColor = 'rgb(238, 238, 238)'
   let setNewColor = 'white'
-  
-  getButton.addEventListener('click', function(){
-    for(let i = 0; i < holidayClass.length; i += 1){
-      if (holidayClass[i].style.backgroundColor === setNewColor){
+
+  getButton.addEventListener('click', function () {
+    for (let i = 0; i < holidayClass.length; i += 1) {
+      if (holidayClass[i].style.backgroundColor === setNewColor) {
         holidayClass[i].style.backgroundColor = backgroundColor
       } else {
         holidayClass[i].style.backgroundColor = setNewColor
@@ -91,9 +91,9 @@ function clickFriday() {
   let newText = 'SEXTOUUU'
   let fridaysDays = [4, 11, 18, 25]
 
-  getButton.addEventListener('click', function(){
-    for(let i = 0; i < fridayClass.length; i += 1){
-      if (fridayClass[i].innerHTML !== newText){
+  getButton.addEventListener('click', function () {
+    for (let i = 0; i < fridayClass.length; i += 1) {
+      if (fridayClass[i].innerHTML !== newText) {
         fridayClass[i].innerHTML = newText
       } else {
         fridayClass[i].innerHTML = fridaysDays[i]
@@ -103,3 +103,46 @@ function clickFriday() {
 }
 
 clickFriday()
+
+function zoomIn() {
+  let days = document.querySelector('#days')
+
+  days.addEventListener('mouseover', function (event) {
+    event.target.style.fontSize = '30px'
+    event.target.style.fontWeight = '600'
+  })
+}
+
+function zoomOut() {
+  let days = document.querySelector('#days')
+
+  days.addEventListener('mouseout', function (event) {
+    event.target.style.fontSize = '20px'
+    event.target.style.fontWeight = '200'
+  })
+}
+
+zoomIn()
+zoomOut()
+
+function task(taskName) {
+  let span = document.createElement('span')
+  let getTaskDiv = document.querySelector('.my-tasks')
+  span.innerHTML = taskName
+
+  getTaskDiv.appendChild(span)
+}
+
+task('Cozinhar')
+
+function taskColor(color) {
+  let getTaskDiv = document.querySelector('.my-tasks')
+  let newTask = document.createElement('div')
+
+  newTask.className = 'task'
+  newTask.style.backgroundColor = color
+  getTaskDiv.appendChild(newTask)
+}
+
+taskColor('green')
+
