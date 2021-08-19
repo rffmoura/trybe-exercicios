@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset id="fields"><legend>Dados Pessoais</legend>
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" maxlength="40" required>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" maxlength="50" required>
+    <label for="cpf">CPF:</label>
+    <input type="number" name="cpf" id="cpf" max="11" required>
+    <label for="rua">Endereço</label>
+    <input type="text" name="rua" id="rua" maxlength="28" required>
+    <label for="city">Cidade</label>
+    <input type="text" name="" id="">
+    <label for="state">Estado</label>
+    <select name="state" id="state" required>
+      <option value="Estado" id="opt"></option>
+    </select>
+    <div id="type-house">
+      <label for="apartamento">Apartamento</label>
+      <input type="radio" name="house" id="apartamento">
+      <label for="casa">Casa</label>
+      <input type="radio" name="house" id="casa">
+    </div>
+  </fieldset>
+  <fieldset id="last-job"><legend>Último Emprego</legend>
+    <label for="resumo">Resuma seu último emprego:</label>
+    <textarea name="resumo" id="resumo" maxlength="1000" cols="30" rows="5" required></textarea>
+    <label for="job">Cargo:</label>
+    <input type="text" name="job" id="job" maxlength="40" required>
+    <label for="description">Descrição do Cargo:</label>
+    <input type="text" name="description" id="description" maxlength="500" required> 
+    <label for="date">Data de Início:</label>
+    <input type="date" name="date" id="date">
+  </fieldset>
+  <button id="submitBtn" type="submit">Enviar</button>
+  <script src="script.js"></script>
+</body>
+</html>
