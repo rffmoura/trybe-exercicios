@@ -1,0 +1,18 @@
+input[type=text] {
+  display: block;
+}
+input[type=email] {
+  display: block;
+}
+input[type=number] {
+  display: block;
+}
+input[type=date] {
+  display: block;
+}
+select {
+  display: block;
+}
+textarea {
+  display: block;
+}
