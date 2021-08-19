@@ -34,4 +34,8 @@ let states = [
     select.appendChild(state)
   }
 
-  
+  let date = document.getElementById('date')
+
+  date.DatePickerX.init()
+
+  validation.init('.container')  
