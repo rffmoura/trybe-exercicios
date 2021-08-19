@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <form class="container">
+    <h1 class="mb-3 text-center">Currículo</h1>
+
+  <div class="mb-3">
+    <label class="form-label" for="name">Nome:</label>
+    <input class="form-control" type="text" name="name" id="name" maxlength="40" required>
+    
+    <label class="form-label" for="email">Email:</label>
+    <input class="form-control" type="email" name="email" id="email" maxlength="50" required>
+    
+    <label class="form-label" for="cpf">CPF:</label>
+    <input class="form-control" type="number" name="cpf" id="cpf" max="11" required>
+    
+    <label class="form-label" for="rua">Endereço</label>
+    <input class="form-control" type="text" name="rua" id="rua" maxlength="28" required>
+    
+    <label class="form-label" for="city">Cidade</label>
+    <input class="form-control" type="text" name="" id="">
+    
+    <div class="mb-3">
+      <label class="form-label" for="state">Estado</label>
+      <select class="form-select" name="state" id="state" required>
+      <option value="Estado" id="opt"></option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <div>
+        <input class="form-check-input" type="radio" name="house" id="apartamento">
+        <label class="form-check-label" for="apartamento">Apartamento</label>
+      </div>
+
+      <div>
+        <input class="form-check-input" type="radio" name="house" id="casa">
+        <label class="form-check-label" for="casa">Casa</label>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <h2 class="mt-5 mb-3 text-center">Último Emprego</h2>
+    
+    <label class="form-label" for="resumo">Resuma seu último emprego:</label>
+    <textarea class="form-control" name="resumo" id="resumo" maxlength="1000" cols="30" rows="5" required></textarea>
+    
+    <label class="form-label" for="job">Cargo:</label>
+    <input class="form-control" type="text" name="job" id="job" maxlength="40" required>
+    
+    <label class="form-label" for="description">Descrição do Cargo:</label>
+    <input class="form-control" type="text" name="description" id="description" maxlength="500" required>
+    
+    <label class="form-label" for="date">Data de Início:</label>
+    <input class="form-control" type="date" name="date" id="date">
+  </div>
+  
+  <button class="btn btn-primary" id="submitBtn" type="submit">Enviar</button>
+  <button class="btn btn-warning" type="reset">Limpar</button>
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
