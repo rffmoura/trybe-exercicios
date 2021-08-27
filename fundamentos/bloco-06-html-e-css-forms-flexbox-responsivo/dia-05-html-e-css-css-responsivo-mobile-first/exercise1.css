@@ -1,0 +1,53 @@
+body {
+  font-size: large;
+  margin: 0 30px;
+}
+h1 {
+  font-size: x-large;
+}
+h2 {
+  font-size: x-large;
+}
+img {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 512px) {
+  body {
+    background-color: aqua;
+    font-size: x-large;
+    margin: 20px;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+  h2 {
+    font-size: xx-large;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  img {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 940px) {
+  body {
+    background-color: beige;
+    font-size: larger;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: xxx-large;
+    margin: 0px;
+  }
+  h2 {
+    font-size: xx-large;
+  }
+}
