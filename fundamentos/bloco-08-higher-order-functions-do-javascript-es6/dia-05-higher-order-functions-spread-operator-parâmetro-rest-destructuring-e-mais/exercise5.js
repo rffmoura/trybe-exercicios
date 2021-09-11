@@ -2,7 +2,7 @@ const assert = require('assert');
 
 const myList = [1, 2, 3];
 
-const swap = ([a, b, c]) => [c, b, a]
+const swap = ([a, b, c]) => [c, b, a];
 
 const swappedList = swap(myList);
 
