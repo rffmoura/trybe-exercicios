@@ -1,5 +1,6 @@
 const games = [
     {
+        id: 'i3x9',
         title: 'GTA',
         description: 'Um jogo não muito legal',
         price: 99,
