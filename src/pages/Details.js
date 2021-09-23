@@ -38,14 +38,14 @@ class Details extends React.Component {
       <section>
         { loading ? 
           <Loading /> :         
-          <div>
+          <div className='game-card-details'>
             <img src={ img } alt={ title } />
             <h3>{title}</h3>
             <p>{ description}</p>
-            <span>{price}</span>
-            <span>{sales}</span>
-            <span>{releaseYear}</span>
-            <Link to="/">Voltar</Link>
+            <span>Price: {price}</span>
+            <span>Sales: {sales}</span>
+            <span>Release Year: {releaseYear}</span>
+            <Link className="link" to="/">Voltar</Link>
           </div>
       }
       </section>

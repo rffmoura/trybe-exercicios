@@ -2,11 +2,11 @@
 Este projeto é par ao conteúdo de `RTL`, exercício complementar a aula ao vivo.
 
 #### Antes de iniciar
-Faça o clone do repositório, e crie uma branch no seguinte formato: `grupo_sala_x_tribo_y`.
+Faça o clone do repositório, e crie uma branch no seguinte formato: `grupo_x_tribo_y`.
 
-Substitua `sala_x` pelo número da sala na Breakout Room e `tribo_y` pela sua tribo. 
+Substitua `grupo_x` pelo número da sala na Breakout Room e `tribo_y` pela sua tribo. 
 
-Ex.: `grupo_sala_1_tribo_a` ou então `grupo_sala_1_tribo_b`.
+Ex.: `grupo_1_tribo_a` ou então `grupo_1_tribo_b`.
 
 Rode o `npm install`.
 
@@ -22,11 +22,12 @@ Escreva um teste que verifica se a palavra 'Carregando...' é renderizada na tel
 Usando assincronicidade, escreva um teste que verifica se o jogo com o texto `GTA` é renderizado na tela após a saída do carregando.
 
 #### Exercício 3
-Na home do projeto, após o carregamento da lista de jogos, clique no link `Ver detalhes` do primeiro jogo - GTA.
-E verifique o ano de lançamento do jogo `release_year`, igual a 2013.
+Na home do projeto, após o carregamento da lista de jogos, clique no link `Ver detalhes` do segundo jogo da lista.
+E verifique se a tela de detalhes exibe as informações `Release Year` e `Price`, do jogo correspondente.
+
 
 #### Bônus
-
+Escreva um teste que verifica se quando clicado no botão voltar na tela de detalhes após o carregando, é renderizada a lista de jogos.
 
 ## Ao final
 A atividade será finalizada de forma síncrona.
