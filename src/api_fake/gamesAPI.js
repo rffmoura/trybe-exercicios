@@ -8,3 +8,12 @@ export const getGames = () => {
     })
 }
 
+export const getGame = (id) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const game = games.find((myGame) => myGame.id === id)
+            resolve(game)
+        }, 3000)
+    })
+}
+
