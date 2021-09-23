@@ -16,13 +16,13 @@ Rode o `npm install`.
 
 
 #### Exercício 1
-Escreva um teste que verifique se a palavra 'carregando' aparece quando a aplicação é iniciada.
+Escreva um teste que verifica se a palavra 'Carregando...' é renderizada na tela quando a aplicação é iniciada.
 
 #### Exercício 2
-Usando assincronicidade, escreva um teste que verifica se o texto `GTA` aparece após a saída do carregando.
+Usando assincronicidade, escreva um teste que verifica se o jogo com o texto `GTA` é renderizado na tela após a saída do carregando.
 
 #### Exercício 3
-Na home do projeto, após carregar a lista de jogos, clique no link `Ver detalhes` do primeiro jogo - GTA.
+Na home do projeto, após o carregamento da lista de jogos, clique no link `Ver detalhes` do primeiro jogo - GTA.
 E verifique o ano de lançamento do jogo `release_year`, igual a 2013.
 
 #### Bônus

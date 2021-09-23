@@ -27,17 +27,19 @@ class home extends React.Component {
         return (
           <main className="App">
             <header>
-              <h1>Os melhores jogos de todos os tempos</h1>
+              <h1 className="header">Os melhores jogos de todos os tempos</h1>
             </header>
-            <section>
               {loading ? 
                 <Loading />
                 :
-                <>
-                  {games.map((game) => <CardGame key={game.id} game={ game } /> )}
-                </>
+                <section className="main-container">
+                  {games.map((game) => (
+                    <div className="game-list">
+                      <CardGame key={game.id} game={ game } />
+                    </div> 
+                  ))}
+                </section>
               }
-            </section>
           </main>
         );
       }
