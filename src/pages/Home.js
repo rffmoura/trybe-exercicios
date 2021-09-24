@@ -26,8 +26,10 @@ class home extends React.Component {
         const { games, loading } = this.state;
         return (
           <main className="App">
-            <header>
-              <h1 className="header">Os melhores jogos de todos os tempos</h1>
+            <header className="header">
+              <h1>Os melhores jogos de todos os tempos.
+              </h1>
+              <small>Na nossa opinião &#128540;</small> 
             </header>
               {loading ? 
                 <Loading />

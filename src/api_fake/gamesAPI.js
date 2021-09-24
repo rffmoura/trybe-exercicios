@@ -4,7 +4,7 @@ export const getGames = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(games)
-        }, 3000)
+        }, 2000)
     })
 }
 
@@ -13,7 +13,7 @@ export const getGame = (id) => {
         setTimeout(() => {
             const game = games.find((myGame) => myGame.id === id)
             resolve(game)
-        }, 3000)
+        }, 2000)
     })
 }
 

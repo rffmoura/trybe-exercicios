@@ -16,6 +16,7 @@ body {
 
 .main-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -26,6 +27,7 @@ body {
   padding: 40px;
   background-color: #404040;
   margin: 10px;
+  height: 500px;
   justify-content: center;
 }
 
@@ -72,17 +74,17 @@ body {
 }
 
 .game-list {
-  margin-top: 100px;
   width: 30%;
 }
 
 .header {
+  margin-bottom: 70px;
   width: 100vw;
-  position: fixed;
-  height: 50px;
   background-color: #3A4D8F;
   padding-left: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 10px 0;
 }

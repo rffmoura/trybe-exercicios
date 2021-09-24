@@ -42,8 +42,8 @@ class Details extends React.Component {
             <img src={ img } alt={ title } />
             <h3>{title}</h3>
             <p>{ description}</p>
-            <span>Price: {price}</span>
-            <span>Sales: {sales}</span>
+            {price ? <span>Price: {price}</span> : ''}
+            {sales ? <span>Sales: {sales}</span> : ''}
             <span>Release Year: {releaseYear}</span>
             <Link className="link" to="/">Voltar</Link>
           </div>
