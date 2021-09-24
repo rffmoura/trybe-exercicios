@@ -36,8 +36,8 @@ class home extends React.Component {
                 :
                 <section className="main-container">
                   {games.map((game) => (
-                    <div className="game-list">
-                      <CardGame key={game.id} game={ game } />
+                    <div className="game-list" key={game.id}>
+                      <CardGame game={ game } />
                     </div> 
                   ))}
                 </section>

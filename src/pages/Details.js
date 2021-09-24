@@ -19,9 +19,7 @@ class Details extends React.Component {
 
   fetchGame = async () => {
     const { match: { params: { id } } } = this.props;
-    console.log(id);
     const game = await getGame(id)
-    console.log(game)
     this.setState({game, loading: false})
   }
 

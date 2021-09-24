@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 class CardGame extends React.Component {
   render() {
     const { game: { id, title, img, description } } = this.props;
-    console.log(img);
     return (
       <div className='game-card'>
         <img src={ img } alt={ title } />
