@@ -12,14 +12,22 @@ class home extends React.Component {
           games: [],
           loading: true,
         }
+        this._isMounted = false;
       }
       componentDidMount(){
+        this._isMounted = true;
         this.fetchGames();
+      }
+
+      componentWillUnmount() {
+        this._isMounted = false;
       }
     
        fetchGames = async () => {
         const games = await getGames()
-        this.setState({games, loading: false})
+        if(this._isMounted) {
+          this.setState({games, loading: false})
+        }
       }
     
       render(){
