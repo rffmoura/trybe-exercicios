@@ -4,7 +4,7 @@ import { getGames } from '../api_fake/gamesAPI';
 import CardGame from '../components/CardGame';
 import Loading from '../components/Loading';
 
-class home extends React.Component {
+class Home extends React.Component {
     constructor(props){
         super(props);
     
@@ -55,4 +55,4 @@ class home extends React.Component {
       }
 }
 
-export default home;
+export default Home;

@@ -7,9 +7,11 @@ class CardGame extends React.Component {
     return (
       <div className='game-card'>
         <img src={ img } alt={ title } />
-        <h3>{title}</h3>
-        <p className="game-card-description">{ description }</p>
-        <Link className="link" to={`details/${id}`}>Ver detalhes</Link>
+        <div className='game-card-content'>
+          <h3>{title}</h3>
+          <p className="game-card-description">{ description }</p>
+          <Link className="link" to={`details/${id}`}>Ver detalhes</Link>
+        </div>
       </div>
     )
   }
