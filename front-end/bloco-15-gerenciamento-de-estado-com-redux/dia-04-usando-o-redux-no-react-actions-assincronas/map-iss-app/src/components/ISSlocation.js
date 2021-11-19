@@ -4,6 +4,7 @@ import { Map, Marker } from 'pigeon-maps';
 import { receiveIssLocation } from '../redux/actions'
 
 class ISSLocation extends Component {
+  //quando o componente montar, chamar a action
   componentDidMount() {
     const { receiveIssLocationAction } = this.props;
     receiveIssLocationAction();
